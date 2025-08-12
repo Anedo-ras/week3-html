@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Box Model Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Box Model Playground</h1>
+      <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#">Examples</a>
+        <a href="#">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="intro card">
+      <h2>What you'll learn</h2>
+      <p>
+        This page shows how <strong>margin</strong>, <strong>padding</strong>, and <strong>border</strong> affect layout.
+        Each card is visually separated so you can inspect the box boundaries.
+      </p>
+      <button class="btn primary">Try it</button>
+      <button class="btn secondary">Learn more</button>
+    </section>
+
+    <section class="cards">
+      <article class="card example-card spaced">
+        <h3>Card 1 — Padding</h3>
+        <p>Padding adds space inside the border. This card has more padding to show the inner spacing.</p>
+      </article>
+
+      <article class="card example-card margined">
+        <h3>Card 2 — Margin</h3>
+        <p>Margin adds space outside the border. This card has extra margin to push it away from neighbors.</p>
+      </article>
+
+      <article class="card example-card bordered">
+        <h3>Card 3 — Border</h3>
+        <p>Borders outline the element. Try changing border width and style to see the effect.</p>
+      </article>
+    </section>
+
+    <section class="layout-demo">
+      <div class="left-box card">Left box (flex: 1)</div>
+      <div class="right-box card">Right box (flex: 2) — wider because of flex grow</div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Box Model pure HTML & CSS</p>
+    </div>
+  </footer>
+</body>
+</html>
